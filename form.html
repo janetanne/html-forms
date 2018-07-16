@@ -51,8 +51,25 @@
 					Delivery Time <input type="radio" name="time" value="am">AM	
 					<input type="radio" name="time" value="pm">PM
 					<input type="radio" name="time" value="wat">WAT
+					<br>
+					Returning Customer? <input type="radio" name="returning" value="yes">YES
+					<input type="radio" name="returning" value="no">NO
+					<br>
+					For Statistical Purposes <input type="checkbox" name="stats" value="dog">Dog
+					<input type="checkbox" name="stats" value="cat">Cat
+					<input type="checkbox" name="stats" value="hedgehog">Hedgehog
+					<input type="checkbox" name="stats" value="ballonicorn">Balloonicorn
+					<input type="checkbox" name="stats" value="yak">Yak
+					<br>
+						<form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
+							<input type="submit">
+						</form>
+					</form>
+				<footer>*Quantities are given by the flat.</footer>
+	</body>
+</html>
+			
 
-				</form>
 
 					
 
