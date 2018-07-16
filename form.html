@@ -38,11 +38,14 @@
 				<p>Place your orders here! You know you want to.</p>
 
 				<form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
+					<fieldset>
+						<legend>Personal Information</legend>
+							<div>First Name <input type="text" name="firstname" required></div>
+							<div>Last Name <input type="text" name="lastname" required></div>
+						</fieldset>
 					
-					<div>First Name <input type="text" name="firstname"></div>
-					
-					<div>Last Name <input type="text" name="lastname"></div>
-					
+					<br>
+
 					<div>Melon Type:
 						<select name="melontype">
 							<option value="watermelon">Watermelon</option>
@@ -53,14 +56,21 @@
 						</select>
 					</div>
 					
-					<div>Quantity <input type="text" name="quantity"></div>
+					<div>Quantity <input type="text" name="quantity" required></div>
 					
-					<div>Delivery Time <input type="radio" name="time" value="am">AM
+					<br>
+
+					<div>Delivery Time <input type="radio" name="time" value="am"checked>AM
 					<input type="radio" name="time" value="pm">PM
 					<input type="radio" name="time" value="wat">WAT
 					</div>
 					
-					<div>Returning Customer? <input type="radio" name="returning" value="yes">YES
+					<br><div>Special Requests
+					<br><textarea name="specialrequests"></textarea>
+					</div>
+
+					<br>
+					<div>Returning Customer? <input type="radio" name="returning" value="yes" checked>YES
 					<input type="radio" name="returning" value="no">NO
 					</div>
 					
